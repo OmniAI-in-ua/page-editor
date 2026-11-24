@@ -11,6 +11,7 @@ export default defineConfig({
   format: ['esm', 'cjs'],
   dts: true,
   clean: true,
-  sourcemap: true,
+  // dist/ лежить у репозиторії: застосунки ставлять пакет з git без збирання
+  sourcemap: false,
   external: ['vue', '@napi-rs/canvas'],
 })
